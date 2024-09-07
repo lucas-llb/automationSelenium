@@ -4,12 +4,12 @@ using OpenQA.Selenium.Support.UI;
 
 namespace AutomationSelenium;
 
-public class WhatsappMessagerRobot
+public class WhatsappMessegerRobot
 {
     private IWebDriver _driver;
     // Use your user data and profile to avoid authentication process
     private const string BrowserUserData = "C:\\Users\\lucas\\AppData\\Local\\Google\\Chrome\\User Data";
-    public WhatsappMessagerRobot()
+    public WhatsappMessegerRobot()
     {
         var options = new ChromeOptions();
         options.AddArgument($"--user-data-dir={BrowserUserData}");
