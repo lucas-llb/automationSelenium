@@ -7,6 +7,7 @@ namespace AutomationSelenium;
 public class ExampleRobot
 {
     private IWebDriver _driver;
+    // Use your user data and profile to avoid authentication process
     private const string BrowserUserData = "C:\\Users\\lucas\\AppData\\Local\\Google\\Chrome\\User Data";
     public ExampleRobot()
     {
