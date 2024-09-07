@@ -1,5 +1,6 @@
 ﻿using AutomationSelenium;
 
-var robot = new ExampleRobot();
+var robot = new WhatsappMessagerRobot();
+
 // Put your message and the reciever here
-robot.TestWeb("Hello World", "Your-Group-Or-User-Here");
+robot.SendMessage("Hello World", "Your-Group-Or-User-Here");
