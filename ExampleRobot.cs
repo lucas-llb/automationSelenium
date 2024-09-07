@@ -22,7 +22,7 @@ public class ExampleRobot
         _driver.Navigate().GoToUrl("https://web.whatsapp.com/");
         
         var wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(5));
-        Thread.Sleep(TimeSpan.FromSeconds(6));
+        Task.Delay(TimeSpan.FromSeconds(5)).Wait();
         wait.Until(x => x.FindElement(By.XPath("/html/body/div[1]/div/div/div[2]/div[3]/div/div[3]/div[1]/div/div/div[1]/div/div")).Displayed == true);
 
         var elemenSearch = _driver.FindElement(By.XPath("/html/body/div[1]/div/div/div[2]/div[3]/div/div[1]/div/div[2]/div[2]/div/div/p"));
